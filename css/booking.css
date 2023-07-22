@@ -1,356 +1,207 @@
-@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;700&display=swap");
 * {
-  padding: 0;
   margin: 0;
-  font-family: "League Spartan", sans-serif;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.header {
-  width: 100%;
-  height: 920px;
-  background-image: url(/images/booking/hero-bg-desktop.jpg), url(/images/patterns/pattern-curve-bottom-right.svg);
-  background-repeat: no-repeat, no-repeat;
-  background-size: 100% 600px, 993px;
-  background-position: top, left 600px;
-  padding: 65px 0 116px 0;
-  flex-grow: 1;
+.container {
+  width: 1110px;
+  margin: 0 auto;
 }
-.header .error {
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: -0.125px;
-  color: #B54949;
-}
-.header .header__content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 153px;
-}
-.header .header__content section {
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-.header .header__content section .promo__section {
-  width: 100%;
-  max-width: 444px;
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  color: #FFF;
-}
-.header .header__content section .promo__section h1 {
-  font-size: 80px;
-  font-weight: 300;
-  letter-spacing: -1px;
-}
-.header .header__content section .promo__section p {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
-}
-.header .header__content section .promo__section button {
-  display: none;
-  width: 100%;
-  max-width: 245px;
-  padding: 25px 0 23px 0;
-  border: 1px solid #FFF;
-  background: none;
-  cursor: pointer;
+
+.btn {
+  padding: 25px 55px;
+  font-size: 17px;
   font-weight: 600;
   line-height: 16px;
   letter-spacing: 2.5px;
-  font-size: 17px;
-  color: #FFF;
-  text-decoration: none;
-  user-select: none;
-}
-.header .header__content section .promo__section button:hover {
-  background: white;
-  border: 1px solid #111;
-  color: #111;
-}
-.header .header__content section form {
-  width: 100%;
-  max-width: 540px;
-  padding: 48px;
-  display: flex;
-  flex-direction: column;
-  gap: 33px;
-  background: #FFF;
-  box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.5);
-  position: relative;
-}
-.header .header__content section form::before {
-  content: url(/img/patterns/pattern-lines.svg);
-  display: block;
-  position: absolute;
-  top: 507px;
-  left: -80px;
-  z-index: -1;
-}
-.header .header__content section form .name {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-.header .header__content section form input {
-  width: 100%;
-  max-width: 444px;
-  padding: 0 0 15px 16px;
-  outline: none;
-  border: none;
-  border-bottom: 1px solid #8E8E8E;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 28px;
-  color: #111111;
-}
-.header .header__content section form input.active {
-  border-bottom: 1px solid #111;
-}
-.header .header__content section form input::placeholder {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 28px;
-  color: rgba(17, 17, 17, 0.5019607843);
-  user-select: none;
-}
-.header .header__content section form .pick__about {
-  width: 100%;
-  max-width: 444px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 15px;
-}
-.header .header__content section form .pick__about .pick__error {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-.header .header__content section form .pick__about label {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 28px;
-  color: #111111;
-}
-.header .header__content section form .pick__about .date__content {
-  width: 100%;
-  max-width: 290px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-}
-.header .header__content section form .pick__about .date__content select {
-  width: 80px;
-  height: 43px;
-  padding: 0 0 15px 16px;
-  border: none;
-  outline: none;
-  background: none;
-  border-bottom: 1px solid #8E8E8E;
-  user-select: none;
-  appearance: none;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 28px;
-  color: rgba(17, 17, 17, 0.5019607843);
-  scrollbar-width: 0;
-}
-.header .header__content section form .pick__about .date__content #year, .header .header__content section form .pick__about .date__content .ap {
-  width: 97px;
-}
-.header .header__content section form .pick__about .date__content .ap {
-  appearance: none;
-}
-.header .header__content section form .counter {
-  width: 100%;
-  max-width: 444px;
-  border-bottom: 1px solid #8E8E8E;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  padding: 0 30px 16px 33px;
-}
-.header .header__content section form .counter svg {
+  text-transform: uppercase;
   cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #FFF;
+  transition: 0.5s;
 }
-.header .header__content section form .counter svg:hover path {
-  fill: rgba(158, 127, 102, 0.5019607843);
+.btn a {
+  color: white;
+  text-decoration: none;
 }
-.header .header__content section form .counter .counts {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: -0.25px;
-  color: #151515;
+.btn.light {
+  background-color: transparent;
 }
-.header .header__content section form button {
-  width: 100%;
-  max-width: 444px;
-  padding: 18px 0;
-  font-size: 17px;
-  font-weight: 600;
-  line-height: 28px;
-  letter-spacing: 2.5px;
-  color: #FFF;
-  user-select: none;
+.btn.light:hover {
+  background-color: white;
 }
-.header .header__content section form button:hover {
+.btn.light:hover a {
   color: black;
 }
+.btn.dark {
+  background-color: #111;
+  color: white;
+}
+.btn.dark:hover {
+  border: 1px solid black;
+  background-color: transparent;
+}
+.btn.dark:hover a {
+  color: black;
+}
+.btn.special {
+  background-color: transparent;
+  color: white;
+}
+.btn.special:hover {
+  background-color: white;
+  color: #111;
+}
 
-@media only screen and (max-width: 1000px) {
-  .header {
-    width: 100%;
-    height: 1035px;
-    background-image: url(/img/booking/hero-bg-tablet@2x.jpg), none;
-    background-repeat: no-repeat;
-    background-size: 100% 600px;
-    background-position: top;
-    padding: 56px 0 120px 0;
-    flex-grow: 1;
+header {
+  margin: 0 auto;
+  display: flex;
+  background-color: #111111;
+  background-image: url(../images/booking/hero-bg-desktop.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+header .header__content {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 65px 10px 198px 10px;
+}
+header .header__content .header__about {
+  max-width: 500px;
+}
+header .header__content .header__about .header-logo {
+  margin-bottom: 153px;
+}
+header .header__content .header__about h1 {
+  color: #FFF;
+  font-family: League Spartan;
+  font-size: 80px;
+  font-weight: 300;
+  line-height: 80px;
+  letter-spacing: -1px;
+}
+header .header__content .header__about .descr {
+  margin-top: 10px;
+  color: #FFF;
+  font-family: League Spartan;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+header .header__content .header__about .btn {
+  margin-top: 40px;
+}
+header .header__content .timer {
+  width: 100%;
+  max-width: 552px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+header .header__content .timer div {
+  width: 120px;
+  height: 120px;
+  border: 1px solid #FFF;
+  background: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header .header__content .timer div p {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: 2.5px;
+}
+header .header__content .timer div span {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 13px;
+}
+
+@media only screen and (min-width: 650px) and (max-width: 1110px) {
+  header {
+    background-position: center top;
+    background-color: black;
+    background-size: contain;
+    background-image: url(../images/homepage/tablet/hero-bg-tablet@2x.jpg);
   }
-  .header .header__content {
-    width: 100%;
+  header .header__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  header .header__content .header__about {
+    padding-top: 460px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 70px;
-  }
-  .header .header__content section {
-    flex-direction: column;
-    gap: 38px;
     align-items: center;
+    max-width: 689px;
   }
-  .header .header__content section .promo__section {
-    width: 100%;
-    max-width: 690px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  header .header__content .header__about .header-logo {
+    margin-bottom: 38px;
+  }
+  header .header__content .header__about h1 {
+    width: 300px;
     color: #FFF;
-    gap: 12px;
-  }
-  .header .header__content section .promo__section h1 {
+    text-align: center;
+    text-align: center;
     font-size: 48px;
     line-height: 64px;
     letter-spacing: -0.6px;
   }
-  .header .header__content section .promo__section p {
-    width: 100%;
-    max-width: 573px;
+  header .header__content .header__about .descr {
+    width: 570px;
+    text-align: center;
+    margin-bottom: 52px;
   }
-  .header .header__content section form::before {
+  header .header__content .timer {
     display: none;
   }
 }
-@media only screen and (max-width: 600px) {
-  .header {
-    width: 100%;
-    height: 1135px;
-    padding: 56px 0 86px 0;
-    flex-grow: 1;
+@media only screen and (min-width: 375px) and (max-width: 650px), (max-width: 375px) {
+  header {
+    background-color: black;
+    background-position: center top;
+    background-size: contain;
+    background-image: url(../images/homepage/mobile/hero-bg-mobile@2x.jpg);
+    overflow: visible;
+    padding-top: 280px;
   }
-  .header .header__content {
-    width: 100%;
+  header .header__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .header__content .header__about {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 44px;
   }
-  .header .header__content section {
-    flex-direction: column;
-    gap: 91px;
-    align-items: center;
+  header .header__content .header__about .header-logo {
+    margin-bottom: 38px;
   }
-  .header .header__content section .promo__section {
-    width: 100%;
-    max-width: 690px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  header .header__content .header__about h1 {
     text-align: center;
-    color: #FFF;
-    gap: 13px;
+    line-height: 40px;
+    letter-spacing: -0.4px;
+    font-size: 32px;
   }
-  .header .header__content section .promo__section h1 {
-    font-size: 48px;
-    line-height: 64px;
-    letter-spacing: -0.6px;
+  header .header__content .header__about .descr {
+    text-align: center;
+    font-family: League Spartan;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 53px;
   }
-  .header .header__content section .promo__section p {
-    width: 100%;
-    max-width: 573px;
-  }
-  .header .header__content section .promo__section button {
-    display: block;
-    margin-top: 6px;
-  }
-  .header .header__content section form input {
-    width: 100%;
-    max-width: 444px;
-    padding: 0 0 15px 16px;
-    outline: none;
-    border: none;
-    border-bottom: 1px solid #8E8E8E;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 28px;
-    color: #111111;
-  }
-  .header .header__content section form input.active {
-    border-bottom: 1px solid #111;
-  }
-  .header .header__content section form input::placeholder {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 28px;
-    color: rgba(17, 17, 17, 0.5019607843);
-    user-select: none;
-  }
-  .header .header__content section form .pick__about {
-    width: 100%;
-    max-width: 444px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-  }
-  .header .header__content section form .pick__about label {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 28px;
-    color: #111111;
-  }
-  .header .header__content section form button {
-    width: 100%;
-    max-width: 444px;
-    padding: 18px 10px;
-    font-size: 17px;
-    font-weight: 600;
-    line-height: 28px;
-    letter-spacing: 2.5px;
-    color: #FFF;
-    user-select: none;
-  }
-  .header .header__content section form button:hover {
-    color: black;
-  }
-}
-@media only screen and (max-width: 360px) {
-  .header .header__content section form button {
-    padding: 18px 5px;
-    font-size: 13px;
-    letter-spacing: 2px;
+  header .header__content .timer {
+    display: none;
   }
 }/*# sourceMappingURL=booking.css.map */
