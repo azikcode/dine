@@ -264,12 +264,12 @@ main .middle__family .family-image img {
   object-fit: scale-down;
   object-position: top auto;
 }
-main .middle__family .family-content .heading {
+main .middle__family .family-content .caption {
   margin-top: 65px;
   display: flex;
   flex-direction: column;
 }
-main .middle__family .family-content .heading .title {
+main .middle__family .family-content .caption .title {
   width: 380px;
 }
 main .middle__locally {
@@ -283,7 +283,7 @@ main .middle__locally .locally-content {
   padding-bottom: 50px;
   height: max-content;
 }
-main .middle__locally .locally-content .heading {
+main .middle__locally .locally-content .caption {
   width: 350px;
 }
 main .middle__locally .locally-image {
@@ -311,13 +311,13 @@ main .middle__locally .locally-image picture img {
     align-items: center;
     flex-direction: column;
   }
-  main .middle__family .family-content .heading {
+  main .middle__family .family-content .caption {
     margin-top: 56px;
     display: flex;
     align-items: center;
   }
-  main .middle__family .family-content .heading .title,
-  main .middle__family .family-content .heading .subtitle {
+  main .middle__family .family-content .caption .title,
+  main .middle__family .family-content .caption .subtitle {
     text-align: center;
   }
   main .middle__locally {
@@ -332,14 +332,14 @@ main .middle__locally .locally-image picture img {
     align-items: center;
     flex-direction: column;
   }
-  main .middle__locally .locally-content .heading {
+  main .middle__locally .locally-content .caption {
     flex-direction: column;
     margin-top: 56px;
     display: flex;
     align-items: center;
   }
-  main .middle__locally .locally-content .heading .title,
-  main .middle__locally .locally-content .heading .subtitle {
+  main .middle__locally .locally-content .caption .title,
+  main .middle__locally .locally-content .caption .subtitle {
     text-align: center;
   }
   main .middle__locally .locally-image picture img {
@@ -369,21 +369,21 @@ main .middle__locally .locally-image picture img {
     align-items: center;
     flex-direction: column;
   }
-  main .middle__family .family-content .heading {
+  main .middle__family .family-content .caption {
     margin-top: 56px;
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 350px;
   }
-  main .middle__family .family-content .heading .title {
+  main .middle__family .family-content .caption .title {
     width: 250px;
     text-align: center;
     font-size: 32px;
     line-height: 40px;
     letter-spacing: -0.4px;
   }
-  main .middle__family .family-content .heading .subtitle {
+  main .middle__family .family-content .caption .subtitle {
     max-width: 315px;
     text-align: center;
     font-size: 16px;
@@ -406,21 +406,21 @@ main .middle__locally .locally-image picture img {
     flex-direction: column;
     margin-top: 56px;
   }
-  main .middle__locally .locally-content .heading {
+  main .middle__locally .locally-content .caption {
     margin-top: 56px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 310px;
   }
-  main .middle__locally .locally-content .heading .title {
+  main .middle__locally .locally-content .caption .title {
     width: 250px;
     text-align: center;
     font-size: 32px;
     line-height: 40px;
     letter-spacing: -0.4px;
   }
-  main .middle__locally .locally-content .heading .subtitle {
+  main .middle__locally .locally-content .caption .subtitle {
     max-width: 315px;
     text-align: center;
     font-size: 16px;
@@ -437,10 +437,10 @@ main .menu__content {
   display: flex;
   justify-content: space-around;
 }
-main .menu__content .menu-about .heading {
+main .menu__content .menu-about .caption {
   flex-direction: column;
 }
-main .menu__content .menu-about .heading .title {
+main .menu__content .menu-about .caption .title {
   margin-top: 55px;
 }
 main .menu__content .menu-slider {
@@ -517,11 +517,11 @@ main .menu__content .menu-slider .prev-btn, main .menu__content .menu-slider .ne
     align-items: center;
     justify-content: center;
   }
-  main .menu__content .menu-about .heading {
+  main .menu__content .menu-about .caption {
     display: flex;
     align-items: center;
   }
-  main .menu__content .menu-about .heading .title, main .menu__content .menu-about .heading .subtitle {
+  main .menu__content .menu-about .caption .title, main .menu__content .menu-about .caption .subtitle {
     text-align: center;
   }
   main .menu__content .menu-slider {
@@ -578,12 +578,12 @@ main .menu__content .menu-slider .prev-btn, main .menu__content .menu-slider .ne
     flex-direction: column;
     justify-content: center;
   }
-  main .menu__content .menu-about .heading {
+  main .menu__content .menu-about .caption {
     width: 320px;
     display: flex;
     align-items: center;
   }
-  main .menu__content .menu-about .heading .title, main .menu__content .menu-about .heading .subtitle {
+  main .menu__content .menu-about .caption .title, main .menu__content .menu-about .caption .subtitle {
     width: 320px;
     text-align: center;
   }
