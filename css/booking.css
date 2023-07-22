@@ -55,6 +55,33 @@
   color: #111;
 }
 
+.heading {
+  display: flex;
+  flex-direction: column;
+}
+.heading .title {
+  font-family: League Spartan;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+}
+.heading .subtitle {
+  margin-top: 27px;
+  width: 445px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+.heading.dark {
+  color: #242B37;
+}
+.heading.light {
+  color: #FFF;
+}
+
 header {
   margin: 0 auto;
   display: flex;
